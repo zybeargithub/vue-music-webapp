@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// 空 js
 export default {
 
 }
@@ -18,7 +19,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "~common/scss/variable.scss";
-
+// --------------------------------------
+// 布局概况：
+// 使用 position 的 relative 和 absolute
+// 来控制左右布局和居中布局
+// --------------------------------------
 .m-header {
   position: relative;
   height: 44px;
@@ -29,7 +34,7 @@ export default {
     line-height: 44px;
     font-weight: bold;
     color: $color-text-l;
-    letter-spacing: 3px;
+    letter-spacing: 3px;// 设置字与字之间的距离
   }
   .mine {
     position: absolute;

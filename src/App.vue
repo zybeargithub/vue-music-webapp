@@ -1,10 +1,14 @@
 <template>
   <div id="app">
+    <!-- header部分 -->
     <m-header></m-header>
+    <!-- tab切换部分 -->
     <tab></tab>
+    <!-- 路由部分 -->
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
+    <!-- 播放器 -->
     <player></player>
   </div>
 </template>

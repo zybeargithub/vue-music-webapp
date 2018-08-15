@@ -1,3 +1,7 @@
+// --------------------
+// 定义 mixin 模式的方法
+// --------------------
+
 // 背景图片
 @mixin bg-image($url) { 
   background-image: url($url + "@2x.png");
