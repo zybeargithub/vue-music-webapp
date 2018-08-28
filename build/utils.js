@@ -1,9 +1,11 @@
 'use strict'
 const path = require('path')
 const config = require('../config')
+// extract-text-webpack-plugin : 将 css 从 js 的 bundle 中剥离出来，并形成单独的 css 文件
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const packageConfig = require('../package.json')
 
+// 返回 assets 的目录和子目录，根据 dev Or prod
 exports.assetsPath = function (_path) {
   const assetsSubDirectory = process.env.NODE_ENV === 'production'
     ? config.build.assetsSubDirectory
@@ -12,6 +14,7 @@ exports.assetsPath = function (_path) {
   return path.posix.join(assetsSubDirectory, _path)
 }
 
+// 返回 cssLoaders
 exports.cssLoaders = function (options) {
   options = options || {}
 

@@ -16,8 +16,8 @@ const env = require('../config/prod.env')
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
-      sourceMap: config.build.productionSourceMap,
-      extract: true,
+      sourceMap: config.build.productionSourceMap, // 是否打包成 sourceMap
+      extract: true, // 提取 css from JS
       usePostCSS: true
     })
   },
